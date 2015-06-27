@@ -8,22 +8,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	 <link rel="shortcut icon" href="<img src="Imagenes/servicios.png" width="500" height="500" alt="Icono">" />
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>LA BUENA SALUD</title>
     </head>
     <body>
-    <div  class="row container" >
-    	<div class="cols-lg-4" style="border:dotted; float:left">
-       <input type="button" value="NUEVO" class="btn btn-info">
-        </div>	
-		<div class="cols-lg-4" style="border:dotted; float:left">
-        prueba
-        </div>	
-        <div class="cols-lg-4" style="border:dotted; float:left">
-        prueba
-        </div>	   
-    <div>    
+    <div class="container">
+   	  	<div class="row">
+   			<div class="col-lg-12">HEADER</div>
+        </div>
+        <div class="row">
+           	<div class="col-lg-4">MENU</div>
+            <div class="col-lg-8" style="float:left">CONTENIDO</div>
+        </div>
+        <div class="row">
+       		<div class="col-lg-12">FOOTER</div>
+        </div>
+    </div>
     
     </body>
 </html>
