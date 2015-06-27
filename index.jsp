@@ -1,10 +1,3 @@
-<%-- 
-    Document   : newjsp
-    Created on : jun 27, 2015, 2:20:41 p.m.
-    Author     : acedeno
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,17 +7,21 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>LA BUENA SALUD</title>
     <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+    
+<style>
+
+</style>
 </head>
     <body>
     <div class="container">
-   	  	<div class="row">
+   	  	<div class="row" style="background-color:#ADD6C2">
    			<div class="col-lg-3"><img src="Imagenes/servicios.png" width="118" height="114" alt="ientras"></div>
-            <div class="col-lg-9"><h1 style="font-family:Toonish">CLINICA LA BUENA SALUD<h1></div>
+            <div class="col-lg-9"><h1 style="font-family:Toonish; margin-top:50px;" class="text-center">CLINICA LA BUENA SALUD<h1></div>
         </div>
-        <div class="row">
+        <div class="row" style="background-color:#D6EBE0">
    			<div class="col-lg-12"><br></div>
         </div>
-        <div class="row">
+        <div class="row" style="background-color:#D6EBE0">
            	<div class="col-lg-2">
            	  <ul id="MenuBar1" class="MenuBarVertical" style="width:100%">
            	    <li style="width:100%"><a class="MenuBarItemSubmenu" href="#">Elemento 1</a>
@@ -50,11 +47,26 @@
            	    <li style="width:100%"><a href="#">Elemento 4</a></li>
        	      </ul>
            	</div>
-            <div class="col-lg-10" style="float:left"><p class="text-justify">La salud es uno de los elementos más relevantes para el desarrollo de una vida larga y cualitativa. En este sentido, la importancia de la salud reside en permitir que el organismo de una persona, o de un animal, mantenga buenos estándares de funcionamiento y pueda así realizar las diferentes actividades que están en su rutina diaria. La salud es un fenómeno que se logra a partir de un sinfín de acciones y que puede mantenerse por mucho tiempo o perderse debido a diversas razones. La salud es algo que se puede recuperar también pero muchas veces puede costar lograrlo. Cuando hablamos de importancia de la salud estaremos entonces refiriéndonos al valor que la salud tiene para que una persona pueda llevar una buena calidad de vida en todos sus diversos aspectos.
+            <div class="col-lg-7" style="float:left"><p class="text-justify">La salud es uno de los elementos más relevantes para el desarrollo de una vida larga y cualitativa. En este sentido, la importancia de la salud reside en permitir que el organismo de una persona, o de un animal, mantenga buenos estándares de funcionamiento y pueda así realizar las diferentes actividades que están en su rutina diaria. La salud es un fenómeno que se logra a partir de un sinfín de acciones y que puede mantenerse por mucho tiempo o perderse debido a diversas razones. La salud es algo que se puede recuperar también pero muchas veces puede costar lograrlo. Cuando hablamos de importancia de la salud estaremos entonces refiriéndonos al valor que la salud tiene para que una persona pueda llevar una buena calidad de vida en todos sus diversos aspectos.
 
 ... de Importancia: http://www.importancia.org/importancia-de-la-salud.php</p></div>
+
+		<div class="col-lg-3" style="float:left">
+        	<div style="background-color:#999">
+            <div style="margin-left:20px; margin-right:20px;">
+           <label class="text-center" style="margin-left:44px; margin-top:20px"> INICIO DE SESIÓN</label>
+           <br><br>
+           <label>Usuario</label>
+           <input type="text" class="form-control">
+           <label>Contraseña</label>
+           <input type="text" class="form-control">
+           <br>
+           <input type="submit" value="ENTRAR" class="btn btn-default" style="margin-left: 70px; margin-bottom:20px">
+           </div>
+            </div>
         </div>
-        <div class="row">
+        </div>
+        <div class="row" style="background-color:#EBF5F0">
        		<div class="col-lg-12 text-center">© - 2015</div>
         </div>
     </div>
