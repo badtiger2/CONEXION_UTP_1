@@ -13,9 +13,9 @@
         <title>LA BUENA SALUD</title>
     </head>
     <body>
-    <div  class="row" >
+    <div  class="row container" >
     	<div class="cols-lg-4" style="border:dotted; float:left">
-       <input type="button" value="NUEVO" class="btn btn-default">
+       <input type="button" value="NUEVO" class="btn btn-info">
         </div>	
 		<div class="cols-lg-4" style="border:dotted; float:left">
         prueba
