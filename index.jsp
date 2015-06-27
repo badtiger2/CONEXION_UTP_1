@@ -13,14 +13,14 @@
         <title>LA BUENA SALUD</title>
     </head>
     <body>
-    <div style="border:dotted" class="row">
-    	<div class="cols-lg-4">
+    <div  class="row" >
+    	<div class="cols-lg-4" style="border:dotted; float:left">
+       <input type="button" value="NUEVO" class="btn btn-default">
+        </div>	
+		<div class="cols-lg-4" style="border:dotted; float:left">
         prueba
         </div>	
-		<div class="cols-lg-4">
-        prueba
-        </div>	
-        <div class="cols-lg-4">
+        <div class="cols-lg-4" style="border:dotted; float:left">
         prueba
         </div>	   
     <div>    
