@@ -8,10 +8,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>LA BUENA SALUD</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+    <div style="border:dotted" class="row">
+    	<div class="cols-lg-4">
+        prueba
+        </div>	
+		<div class="cols-lg-4">
+        prueba
+        </div>	
+        <div class="cols-lg-4">
+        prueba
+        </div>	   
+    <div>    
+    
     </body>
 </html>
