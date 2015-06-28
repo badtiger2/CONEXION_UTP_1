@@ -95,7 +95,7 @@
     <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 	$(document).ready(function() {
-        $("#<%=name%>").load(<%=url%>);
+     
     });
 //alert("Hola");
 	
