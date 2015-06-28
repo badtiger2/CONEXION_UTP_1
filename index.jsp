@@ -1,3 +1,4 @@
+<%@ page import="ConexionBD.Conexion"%>
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
 
 <%!   String name = "";
@@ -31,18 +32,21 @@
         <div class="row" style="background-color:#D6EBE0">
            	<div class="col-lg-2">
            	  <ul id="MenuBar1" class="MenuBarVertical panel panel-success" style="width:100%">
-			  <%Connection conex=null;
+			  <%
                 Statement sqlMenu=null;
                 Statement sqlSubMenu=null;
                 
                 try
                 {
-                  Class.forName("com.mysql.jdbc.Driver");
-                  conex=(Connection)DriverManager.getConnection("jdbc:mysql://localhost/CMLBS","root","");
-                  sqlMenu=conex.createStatement();
-                  
+                    
+                     Conexion con=new Conexion();
+                  Connection conex=con.getConexion();
+            
+                  sqlMenu=conex.createStatement();                  
                   String queryMenu ="SELECT distinct idsitemap,url,parent,profile,name FROM sitemap where parent=0";
                   ResultSet rsMenu = sqlMenu.executeQuery(queryMenu);
+		
+             
 				
                   while (rsMenu.next())
                   {
@@ -50,7 +54,7 @@
                       name = rsMenu.getString("name");
                     %> 
                     
-                    <li style="width:100%" id="<%=name%>"><a class="MenuBarItemSubmenu" >  <%=name%></a> 
+                    <li style="width:100%"><a class="MenuBarItemSubmenu" id="<%=name%>">  <%=name%></a> 
                             <% sqlSubMenu=conex.createStatement();
                                 String querySubMenu ="select * from sitemap where parent="+idsitemap;
                                 ResultSet rsSubMenu = sqlSubMenu.executeQuery(querySubMenu); %>
@@ -59,21 +63,12 @@
                                 {
                                 String namesub= rsSubMenu.getString("Name");
                                  url= rsSubMenu.getString("Url");   %>
-                                        <li style="width:100%" id='<%=namesub%>'><a><%=namesub%></a></li>
+                                        <li style="width:100%"><a id=<%=namesub%>><%=namesub%></a></li>
                                   
                                 <%
                                 }%>  </ul>
                     </li>
-                    <script>
-					var id = '<%=name%>';
-					$("#id").on('click', function()
-					{
-						alert('<%=url%>');
-						$("#contenido").load('<%=url%>');
-					});
-					</script>
                     <% 
-					
                  }
                 }
                     catch(Exception e){
@@ -107,10 +102,10 @@
     </div>
     <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-	/*$("#<%=name%>").on('click', function()
+	$("#<%=name%>").on('click', function()
 	{
 		$("#contenido").load('conexion.jsp');
-	});*/
+	});
 //alert("Hola");
 	
 
