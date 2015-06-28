@@ -47,7 +47,7 @@
            	    <li style="width:100%"><a href="#">Elemento 4</a></li>
        	      </ul>
            	</div>
-            <div class="col-lg-7" style="float:left"><p class="text-justify">La salud es uno de los elementos más relevantes para el desarrollo de una vida larga y cualitativa. En este sentido, la importancia de la salud reside en permitir que el organismo de una persona, o de un animal, mantenga buenos estándares de funcionamiento y pueda así realizar las diferentes actividades que están en su rutina diaria. La salud es un fenómeno que se logra a partir de un sinfín de acciones y que puede mantenerse por mucho tiempo o perderse debido a diversas razones. La salud es algo que se puede recuperar también pero muchas veces puede costar lograrlo. Cuando hablamos de importancia de la salud estaremos entonces refiriéndonos al valor que la salud tiene para que una persona pueda llevar una buena calidad de vida en todos sus diversos aspectos.
+            <div class="col-lg-7" style="float:left"><p class="text-justify">La salud es uno de los elementos m&aacute;s relevantes para el desarrollo de una vida larga y cualitativa. En este sentido, la importancia de la salud reside en permitir que el organismo de una persona, o de un animal, mantenga buenos est&aacute;ndares de funcionamiento y pueda as&iacute; realizar las diferentes actividades que est&aacute;n en su rutina diaria. La salud es un fen&oacute;meno que se logra a partir de un sinf&iacute;n de acciones y que puede mantenerse por mucho tiempo o perderse debido a diversas razones. La salud es algo que se puede recuperar tambi&eacute;n pero muchas veces puede costar lograrlo. Cuando hablamos de importancia de la salud estaremos entonces refiri&eacute;ndonos al valor que la salud tiene para que una persona pueda llevar una buena calidad de vida en todos sus diversos aspectos.
 
 ... de Importancia: http://www.importancia.org/importancia-de-la-salud.php</p></div>
 
@@ -67,7 +67,7 @@
         </div>
         </div>
         <div class="row" style="background-color:#EBF5F0">
-       		<div class="col-lg-12 text-center">© - 2015</div>
+       		<div class="col-lg-12 text-center">� - 2015</div>
         </div>
     </div>
     <script type="text/javascript">
