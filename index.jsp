@@ -1,4 +1,9 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+
+<%!   String name = "";
+      String url ="";
+
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,12 +43,11 @@
                   
                   String queryMenu ="SELECT distinct idsitemap,url,parent,profile,name FROM sitemap where parent=0";
                   ResultSet rsMenu = sqlMenu.executeQuery(queryMenu);
-				  String name = "";
-				  String url ="";
+				
                   while (rsMenu.next())
                   {
                       int idsitemap =rsMenu.getInt("IdSiteMap");
-                       name = rsMenu.getString("name");
+                      name = rsMenu.getString("name");
                     %> 
                     
                     <li style="width:100%"><a class="MenuBarItemSubmenu" id="<%=name%>">  <%=name%></a> 
@@ -101,5 +105,7 @@ var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMen
 	
 
     </script>
+    
+    <%=name%>
     </body>
 </html>
