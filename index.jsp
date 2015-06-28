@@ -98,14 +98,15 @@
     </div>
     <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-	$(document).ready(function() {
-     alert();
-    });
+	$("#<%=name%>").on('click', function()
+	{
+		$("#contenido").load('conexion.jsp');
+	});
 //alert("Hola");
 	
 
     </script>
     
-    <%=name%>
+    
     </body>
 </html>
