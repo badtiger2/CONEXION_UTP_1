@@ -65,7 +65,8 @@
                                 }%>  </ul>
                     </li>
                     <script>
-					$("#<%=name%>").on('click', function()
+					var id = '<%=name%>';
+					$("#id").on('click', function()
 					{
 						$("#contenido").load('<%=url%>');
 					});
