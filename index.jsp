@@ -67,7 +67,7 @@
                     <script>
 					$("#<%=name%>").on('click', function()
 					{
-						$("#contenido").load('conexion.jsp');
+						$("#contenido").load('<%=url%>');
 					});
 					</script>
                     <% 
