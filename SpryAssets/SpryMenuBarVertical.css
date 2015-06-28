@@ -71,12 +71,12 @@ ul.MenuBarVertical ul li
 /* Outermost menu container has borders on all sides */
 ul.MenuBarVertical
 {
-	border: 1px solid #CCC;
+	border: 0px solid #CCC;
 }
 /* Submenu containers have borders on all sides */
 ul.MenuBarVertical ul
 {
-	border: 1px solid #CCC;
+	border: 0px solid #CCC;
 }
 /* Menu items are a light gray block with padding and no text decoration */
 ul.MenuBarVertical a
