@@ -107,10 +107,10 @@
     </div>
     <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-	$("#<%=name%>").on('click', function()
+	/*$("#<%=name%>").on('click', function()
 	{
 		$("#contenido").load('conexion.jsp');
-	});
+	});*/
 //alert("Hola");
 	
 
