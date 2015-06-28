@@ -90,12 +90,12 @@
         </div>
         <div class="row" style="background-color:#EBF5F0">
        		<div class="col-lg-12 text-center">© - 2015</div>
-        </div>
+        </div><%=namesub%>
     </div>
     <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 	$(document).ready(function() {
-     alert(<%=namesub%>);
+     alert();
     });
 //alert("Hola");
 	
