@@ -4,6 +4,7 @@
     	 <link rel="shortcut icon" href="Imagenes/servicios.png" width="500" height="500" alt="Icono" />
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
         <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-2.1.4.min.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
         <title>LA BUENA SALUD</title>
     <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
