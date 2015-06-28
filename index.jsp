@@ -4,7 +4,7 @@
     	 <link rel="shortcut icon" href="Imagenes/servicios.png" width="500" height="500" alt="Icono" />
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
         <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
         <title>LA BUENA SALUD</title>
     <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
     
@@ -52,13 +52,13 @@
 ... de Importancia: http://www.importancia.org/importancia-de-la-salud.php</p></div>
 
 		<div class="col-lg-3" style="float:left">
-        	<div style="background-color:#999">
+        	<div style="background-color:#eee; border:1px solid #CCC">
             <div style="margin-left:20px; margin-right:20px;">
-           <label class="text-center" style="margin-left:44px; margin-top:20px"> INICIO DE SESIÓN</label>
+           <label class="text-center" style="margin-left:44px; margin-top:20px"> INICIO DE SESI&Oacute;N</label>
            <br><br>
            <label>Usuario</label>
            <input type="text" class="form-control">
-           <label>Contraseña</label>
+           <label>Contrase&ntilde;a</label>
            <input type="text" class="form-control">
            <br>
            <input type="submit" value="ENTRAR" class="btn btn-default" style="margin-left: 70px; margin-bottom:20px">
