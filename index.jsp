@@ -55,7 +55,7 @@
                                 {
                                 String namesub= rsSubMenu.getString("Name");
                                  url= rsSubMenu.getString("Url");   %>
-                                        <li style="width:100%"><a href=<%=url%>><%=namesub%></a></li>
+                                        <li style="width:100%"><a id=<%=namesub%>><%=namesub%></a></li>
                                   
                                 <%
                                 }%>  </ul>
@@ -95,7 +95,7 @@
     <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 	$(document).ready(function() {
-     
+     alert(<%=namesub%>);
     });
 //alert("Hola");
 	
