@@ -1,8 +1,14 @@
+<%@ page import="ConexionBD.Conexion"%>
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
 
 <%!   String name = "";
       String url ="";
 
+%>
+<%
+HttpSession objSesion = request.getSession(false); 
+String usuario = (String)objSesion.getAttribute("userid");
+out.println("Usuario en sesion: " + usuario);
 %>
 <!DOCTYPE html>
 <html>
@@ -31,14 +37,14 @@
         <div class="row" style="background-color:#D6EBE0">
            	<div class="col-lg-2">
            	  <ul id="MenuBar1" class="MenuBarVertical panel panel-success" style="width:100%">
-			  <%Connection conex=null;
+			  <%
                 Statement sqlMenu=null;
                 Statement sqlSubMenu=null;
                 
                 try
                 {
-                  Class.forName("com.mysql.jdbc.Driver");
-                  conex=(Connection)DriverManager.getConnection("jdbc:mysql://localhost/CMLBS","root","");
+                   Conexion con=new Conexion();
+       Connection conex=con.getConexion();
                   sqlMenu=conex.createStatement();
                   
                   String queryMenu ="SELECT distinct idsitemap,url,parent,profile,name FROM sitemap where parent=0";
@@ -85,6 +91,7 @@
             <div class="col-lg-7" style="float:left" id="contenido"><p class="text-justify">La salud es uno de los elementos más relevantes para el desarrollo de una vida larga y cualitativa. En este sentido, la importancia de la salud reside en permitir que el organismo de una persona, o de un animal, mantenga buenos estándares de funcionamiento y pueda así realizar las diferentes actividades que están en su rutina diaria. La salud es un fenómeno que se logra a partir de un sinfín de acciones y que puede mantenerse por mucho tiempo o perderse debido a diversas razones. La salud es algo que se puede recuperar también pero muchas veces puede costar lograrlo. Cuando hablamos de importancia de la salud estaremos entonces refiriéndonos al valor que la salud tiene para que una persona pueda llevar una buena calidad de vida en todos sus diversos aspectos.
 
 ... de Importancia: http://www.importancia.org/importancia-de-la-salud.php</p></div>
+<form method="post" action="login.jsp">
 
 		<div class="col-lg-3" style="float:left">
         	<div style="background-color:#eee; border:0px solid #CCC">
@@ -92,14 +99,16 @@
            <label class="text-center" style="margin-left:44px; margin-top:20px"> INICIO DE SESIÓN</label>
            <br><br>
            <label>Usuario</label>
-           <input type="text" class="form-control">
+            <input type="text" name="uname" class="form-control">
            <label>Contraseña</label>
-           <input type="text" class="form-control">
+           <input type="text" name="pass" class="form-control">
            <br>
            <input type="submit" value="ENTRAR" class="btn btn-default" style="margin-left: 70px; margin-bottom:20px">
+		         <br>    Yet Not Registered!! <a href="reg.jsp">Register Here</a>
            </div>
             </div>
         </div>
+		    </form>
         </div>
         <div class="row" style="background-color:#EBF5F0">
        		<div class="col-lg-12 text-center">© - 2015</div>
