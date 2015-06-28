@@ -90,7 +90,7 @@
         </div>
         <div class="row" style="background-color:#EBF5F0">
        		<div class="col-lg-12 text-center">© - 2015</div>
-        </div><%=namesub%>
+        </div>
     </div>
     <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
