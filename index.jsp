@@ -64,7 +64,14 @@
                                 <%
                                 }%>  </ul>
                     </li>
+                    <script>
+					$("#<%=name%>").on('click', function()
+					{
+						$("#contenido").load('conexion.jsp');
+					});
+					</script>
                     <% 
+					
                  }
                 }
                     catch(Exception e){
