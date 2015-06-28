@@ -44,7 +44,7 @@
                       String name = rsMenu.getString("name");
                     %> 
                     
-                    <li style="width:100%"><a class="MenuBarItemSubmenu" href="#">  <%=name%></a> 
+                    <li style="width:100%"><a class="MenuBarItemSubmenu" id="<%=name%>">  <%=name%></a> 
                             <% sqlSubMenu=conex.createStatement();
                                 String querySubMenu ="select * from sitemap where parent="+idsitemap;
                                 ResultSet rsSubMenu = sqlSubMenu.executeQuery(querySubMenu); %>
@@ -93,7 +93,7 @@
     <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 	$(document).ready(function() {
-        $("#contenido").load('conexion.jsp');
+        $("#<%=name%>").load(<%=url%>);
     });
 //alert("Hola");
 	
