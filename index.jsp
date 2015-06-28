@@ -38,10 +38,12 @@
                   
                   String queryMenu ="SELECT distinct idsitemap,url,parent,profile,name FROM sitemap where parent=0";
                   ResultSet rsMenu = sqlMenu.executeQuery(queryMenu);
+				  String name = "";
+				  String url ="";
                   while (rsMenu.next())
                   {
                       int idsitemap =rsMenu.getInt("IdSiteMap");
-                      String name = rsMenu.getString("name");
+                       name = rsMenu.getString("name");
                     %> 
                     
                     <li style="width:100%"><a class="MenuBarItemSubmenu" id="<%=name%>">  <%=name%></a> 
@@ -52,7 +54,7 @@
                              <% while (rsSubMenu.next())
                                 {
                                 String namesub= rsSubMenu.getString("Name");
-                                String url= rsSubMenu.getString("Url");   %>
+                                 url= rsSubMenu.getString("Url");   %>
                                         <li style="width:100%"><a href=<%=url%>><%=namesub%></a></li>
                                   
                                 <%
