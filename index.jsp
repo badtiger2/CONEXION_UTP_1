@@ -73,6 +73,9 @@
     </div>
     <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+$(document).ready(function() {
+        $("#contenido").load('conexion.jsp');
+    });
     </script>
     </body>
 </html>
