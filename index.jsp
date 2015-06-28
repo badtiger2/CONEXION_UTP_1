@@ -68,6 +68,7 @@
 					var id = '<%=name%>';
 					$("#id").on('click', function()
 					{
+						alert('<%=url%>');
 						$("#contenido").load('<%=url%>');
 					});
 					</script>
