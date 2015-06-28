@@ -44,16 +44,16 @@
                       String name = rsMenu.getString("name");
                     %> 
                     
-                    <li><a class="MenuBarItemSubmenu" href="#">  <%=name%></a> 
+                    <li style="width:100%"><a class="MenuBarItemSubmenu" href="#">  <%=name%></a> 
                             <% sqlSubMenu=conex.createStatement();
                                 String querySubMenu ="select * from sitemap where parent="+idsitemap;
                                 ResultSet rsSubMenu = sqlSubMenu.executeQuery(querySubMenu); %>
-                                <ul>
+                                <ul style="width:100%">
                              <% while (rsSubMenu.next())
                                 {
                                 String namesub= rsSubMenu.getString("Name");
                                 String url= rsSubMenu.getString("Url");   %>
-                                        <li><a href=<%=url%>><%=namesub%></a></li>
+                                        <li style="width:100%"><a href=<%=url%>><%=namesub%></a></li>
                                   
                                 <%
                                 }%>  </ul>
