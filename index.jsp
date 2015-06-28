@@ -25,7 +25,7 @@
         </div>
         <div class="row" style="background-color:#D6EBE0">
            	<div class="col-lg-2">
-           	  <ul id="MenuBar1" class="MenuBarVertical" style="width:100%">
+           	  <ul id="MenuBar1" class="MenuBarVertical panel panel-success" style="width:100%">
 			  <%Connection conex=null;
                 Statement sqlMenu=null;
                 Statement sqlSubMenu=null;
@@ -72,7 +72,7 @@
 ... de Importancia: http://www.importancia.org/importancia-de-la-salud.php</p></div>
 
 		<div class="col-lg-3" style="float:left">
-        	<div style="background-color:#eee; border:1px solid #CCC">
+        	<div style="background-color:#eee; border:0px solid #CCC">
             <div style="margin-left:20px; margin-right:20px;">
            <label class="text-center" style="margin-left:44px; margin-top:20px"> INICIO DE SESIÓN</label>
            <br><br>
