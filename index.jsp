@@ -65,7 +65,7 @@ out.println("Usuario en sesion: " + usuario);
                                 {
                                 String namesub= rsSubMenu.getString("Name");
                                  url= rsSubMenu.getString("Url");   %>
-                                        <li style="width:100%"><a id='<%=namesub%>'><%=namesub%></a></li>
+                                        <li style="width:100%"><a class="sub" id='<%=namesub%>'><%=namesub%></a></li>
                                   
                                 <%
                                 }%>  </ul>
