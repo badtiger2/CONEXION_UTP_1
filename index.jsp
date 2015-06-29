@@ -56,7 +56,7 @@ out.println("Usuario en sesion: " + usuario);
                       name = rsMenu.getString("name");
                     %> 
                     
-                    <li style="width:100%"><a class="MenuBarItemSubmenu sub" id="idsitemap">  <%=name%></a> 
+                    <li style="width:100%"><a class="MenuBarItemSubmenu sub" id="<%=idsitemap%>">  <%=name%></a> 
                             <% sqlSubMenu=conex.createStatement();
                                 String querySubMenu ="select * from sitemap where parent="+idsitemap;
                                 ResultSet rsSubMenu = sqlSubMenu.executeQuery(querySubMenu); %>
@@ -65,7 +65,7 @@ out.println("Usuario en sesion: " + usuario);
                                 {
                                 String namesub= rsSubMenu.getString("Name");
                                  url= rsSubMenu.getString("Url");   %>
-                                        <li style="width:100%"><a class="sub" id="idsitemap"><%=namesub%></a></li>
+                                        <li style="width:100%"><a class="sub" id="<%=idsitemap%>"><%=namesub%></a></li>
                                   
                                 <%
                                 }%>  </ul>
