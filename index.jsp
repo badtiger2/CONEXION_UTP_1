@@ -3,7 +3,7 @@
 
 <%!   String name = "";
       String url ="";
-
+	
 %>
 <%
 HttpSession objSesion = request.getSession(false); 
@@ -64,9 +64,9 @@ out.println("Usuario en sesion: " + usuario);
                              <% while (rsSubMenu.next())
                                 {
                                 String namesub= rsSubMenu.getString("Name");
-								  int idsitemap =rsMenu.getInt("IdSiteMap");
+								 int idsitemapsub =rsSubMenu.getInt("IdSiteMap");
                                  url= rsSubMenu.getString("Url");   %>
-                                        <li style="width:100%"><a class="sub" id="<%=idsitemap%>"><%=namesub%></a></li>
+                                        <li style="width:100%"><a class="sub" id="<%=idsitemapsub%>"><%=namesub%></a></li>
                                   
                                 <%
                                 }%>  </ul>
