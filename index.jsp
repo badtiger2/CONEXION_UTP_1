@@ -54,7 +54,7 @@ out.println("Usuario en sesion: " + usuario);
                   {
                       int idsitemap =rsMenu.getInt("IdSiteMap");
                       name = rsMenu.getString("name");
-					  url= rsSubMenu.getString("Url");   %>
+					  url= rsMenu.getString("Url");   %>
                     %> 
                     
                     <li style="width:100%"><a class="MenuBarItemSubmenu sub" id="<%=idsitemap%>">  <%=name%> </a>
