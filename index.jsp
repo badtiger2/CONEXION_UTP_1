@@ -118,7 +118,7 @@ out.println("Usuario en sesion: " + usuario);
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 	$(".sub").on('click', function()
 	{
-		alert($(this.id));
+		 $(this).attr("id");
 	});
 //alert("Hola");
 	
