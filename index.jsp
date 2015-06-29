@@ -57,7 +57,7 @@ out.println("Usuario en sesion: " + usuario);
                     %> 
                     
                     <li style="width:100%"><a class="MenuBarItemSubmenu sub" id="<%=idsitemap%>">  <%=name%> </a>
-                    <label style="display:none" id="<%=idsitemap%>"><%=url%></label> 
+                    <label style="display:none" id="label<%=idsitemap%>"><%=url%></label> 
                             <% sqlSubMenu=conex.createStatement();
                                 String querySubMenu ="select * from sitemap where parent="+idsitemap;
                                 ResultSet rsSubMenu = sqlSubMenu.executeQuery(querySubMenu); %>
@@ -113,7 +113,7 @@ out.println("Usuario en sesion: " + usuario);
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 	$(".sub").on('click', function()
 	{	var id = $(this).attr('id');
-		var url = $("#id").html();
+		var url = $("#label"+id).html();
 		alert(url);
 		$("#contenido").load('url');
 	});
