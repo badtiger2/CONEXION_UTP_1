@@ -55,7 +55,7 @@ out.println("Usuario en sesion: " + usuario);
                       int idsitemap =rsMenu.getInt("IdSiteMap");
                       name = rsMenu.getString("name");
                     %> 
-                    <%=url%>
+                    
                     <li style="width:100%"><a class="MenuBarItemSubmenu sub" id="<%=idsitemap%>">  <%=name%> </a>
                     <label style="display:none" id="label<%=idsitemap%>"><%=url%></label> 
                             <% sqlSubMenu=conex.createStatement();
