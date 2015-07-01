@@ -115,7 +115,7 @@ var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMen
 	$(".sub").on('click', function()
 	{	var id = $(this).attr('id');
 		var url = $("#label"+id).html();
-		$("#contenido").load('url');
+		$("#contenido").load(url);
 	});
 //alert("Hola");
 	
