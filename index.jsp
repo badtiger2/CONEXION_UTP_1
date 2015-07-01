@@ -67,7 +67,7 @@ out.println("Usuario en sesion: " + usuario);
                                 String namesub= rsSubMenu.getString("Name");
 								 int idsitemapsub =rsSubMenu.getInt("IdSiteMap");
                                  url= rsSubMenu.getString("Url");   %>
-                                        <li style="width:100%"><a class="sub" id="<%=idsitemapsub%>"><%=namesub%></a></li>
+                                        <li style="width:100%"><a class="sub" id="<%=idsitemapsub%>"><%=namesub%></a><%=url%></li>
                                   
                                 <%
                                 }%>  </ul>
