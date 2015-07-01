@@ -54,6 +54,7 @@ out.println("Usuario en sesion: " + usuario);
                   {
                       int idsitemap =rsMenu.getInt("IdSiteMap");
                       name = rsMenu.getString("name");
+					  url= rsMenu.getString("Url");
                     %> 
                     <%=url%>
                     <li style="width:100%"><a class="MenuBarItemSubmenu sub" id="<%=idsitemap%>">  <%=url%> </a>
@@ -66,8 +67,8 @@ out.println("Usuario en sesion: " + usuario);
                                 {
                                 String namesub= rsSubMenu.getString("Name");
 								 int idsitemapsub =rsSubMenu.getInt("IdSiteMap");
-                                 url= rsSubMenu.getString("Url");   %>
-                                        <li style="width:100%"><a class="sub" id="<%=idsitemapsub%>"><%=namesub%></a><%=url%></li>
+                                 urlsub= rsSubMenu.getString("Url");   %>
+                                        <li style="width:100%"><a class="sub" id="<%=idsitemapsub%>"><%=urlsub%></a></li>
                                   
                                 <%
                                 }%>  </ul>
