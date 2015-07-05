@@ -5,11 +5,7 @@
       String url ="";
 	
 %>
-<%
-HttpSession objSesion = request.getSession(false); 
-String usuario = (String)objSesion.getAttribute("userid");
-out.println("Usuario en sesion: " + usuario);
-%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +25,13 @@ out.println("Usuario en sesion: " + usuario);
     <div class="container">
    	  	<div class="row" style="background-color:#ADD6C2">
    			<div class="col-lg-3"><img src="Imagenes/servicios.png" width="118" height="114" alt="ientras"></div>
-            <div class="col-lg-9"><h1 style="font-family:Toonish; margin-top:50px;" class="text-center">CLINICA LA BUENA SALUD<h1></div>
+            <div class="col-lg-8"><h1 style="font-family:Toonish; margin-top:50px;" class="text-center">CLINICA LA BUENA SALUD<h1></div>
+            <div class="col-lg-1"><%
+				HttpSession objSesion = request.getSession(false); 
+				String usuario = (String)objSesion.getAttribute("userid");
+				out.println("Usuario en sesion: " + usuario);
+				%>
+             </div>
         </div>
         <div class="row" style="background-color:#D6EBE0">
    			<div class="col-lg-12"><br></div>
